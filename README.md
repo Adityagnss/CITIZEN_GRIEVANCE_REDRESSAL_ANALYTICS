@@ -4,7 +4,9 @@ A comprehensive web application for collecting, managing, and analyzing citizen 
 
 ## Overview
 
-This application provides a platform for citizens to submit complaints to government authorities. Complaints are securely stored in Google Cloud Storage, categorized, and made available for analysis through Looker Studio dashboards.
+We propose a multi-cloud grievance redressal system that enables citizens to submit complaints with text and images via Flask. The backend is powered by Google Cloud services. Submitted data is routed through API Gateway to Cloud Functions, where images are analyzed using a custom Roboflow model and text is processed using the Natural Language API. The results, along with the original inputs, are stored in Cloud Storage, then transformed and loaded into BigQuery for structured analytics. Looker Studio dashboards provide real-time insights into complaint trends, departmental performance, and resolution efficiency.
+
+
 
 ## System Architecture
 
